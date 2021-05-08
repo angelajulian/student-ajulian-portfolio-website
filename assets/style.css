@@ -1,0 +1,59 @@
+:root {
+  --steel-blue: #335c7a;
+  --grey-blue: #233849;
+  --black: #10171d;
+  --yellow: #f3bc3d;
+  --white: #e8f5fb;
+  --grey: #c8d4e2;
+  --light-brown: #cb986b;
+  --brown: #6e4835;
+  /* color variables chosend from kestrel.jpg */
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.avatar {
+  width: 100%;
+  justify-content: flex-start;
+  margin-right: 50px;
+}
+
+.title {
+  height: 75px;
+  text-align: center;
+  width: 70%;
+}
+
+.title h1 {
+  color: var(--grey);
+  border-bottom: solid var(--yellow);
+}
+
+nav {
+  flex-direction: column;
+  align-content: center;
+  width: 20%;
+}
+
+body {
+  background-color: var(--grey-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+#bio {
+  background-color: var(--light-brown);
+}
+
+.bio-text {
+  justify-content: space-around;
+  text-align: center;
+  color: var(--brown);
+}
