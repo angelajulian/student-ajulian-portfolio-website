@@ -1,0 +1,136 @@
+:root {
+  --steel-blue: #335c7a;
+  --grey-blue: #233849;
+  --black: #10171d;
+  --yellow: #f3bc3d;
+  --white: #e8f5fb;
+  --grey: #c8d4e2;
+  --light-brown: #cb986b;
+  --brown: #6e4835;
+  /* color variables chosend from kestrel.jpg */
+}
+
+* {
+  font-family: "PT Sans", sans-serif;
+  margin: 0 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  display: flex;
+  background-color: var(--black);
+  flex-direction: column;
+  color: var(--white);
+}
+
+header {
+  display: flex;
+  background-color: var(--steel-blue);
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  position: fixed;
+}
+
+header h1 {
+  margin: 10px 50px;
+  width: 80%;
+  align-content: center;
+}
+
+.full-body {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  flex-direction: row;
+}
+
+nav {
+  display: flex;
+  width: 20%;
+  height: 100%;
+  background-color: var(--steel-blue);
+  z-index: 1;
+  top: 0;
+  bottom: 0;
+  position: fixed;
+  flex-direction: column;
+  text-align: left;
+}
+
+nav img {
+  width: 100%;
+}
+
+.content {
+  margin: 100px 5% 50px 25%;
+  font-size: larger;
+}
+
+.content h2 {
+  margin: 15px 0px 15px -40px;
+}
+
+nav h2 a {
+  /* padding-top: 50px; */
+  text-decoration: none;
+  font-size: 30px;
+  margin: 50px 10px 10px 10px;
+  color: var(--yellow);
+}
+
+.project-items {
+  color: var(--brown);
+  height: 75px;
+  width: 75%;
+  background-color: var(--grey);
+  margin: 10px;
+}
+
+.project-items h3 {
+  color: var(--grey-blue);
+  padding: 10px 10px 0px 10px;
+}
+
+.project-items p {
+  padding: 0 10px 10px 10px;
+}
+
+.project-items:hover {
+  transform: scale(1.2);
+  margin-left: 100px;
+}
+
+#project1 {
+  background-image: url("https://via.placeholder.com/150");
+  height: 150px;
+}
+
+#project1:hover {
+  margin-bottom: 20px;
+}
+
+#contact-me {
+  display: flex;
+  flex-direction: column;
+}
+
+#contact-me ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 10px;
+  background-color: var(--grey);
+  color: var(--grey-blue);
+}
+
+#contact-me ul li a {
+  color: var(--grey-blue);
+}
